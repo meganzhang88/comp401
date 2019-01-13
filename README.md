@@ -1,11 +1,11 @@
 # A Java Programming Warm-Up
 
 This assignment is intended to warm up your Java programming skills. 
-In this assignment, you will write three programs that simply process input provided on the "standard input" and print results on the "standard output". These programs will not require the use of object-oriented programming and for the most part can be written as a single main method with one or maybe two helper functions. The purpose of this assignment is to exercise basic programming constructs that you should already be familiar with like loops, if/then statements, basic data types and arrays.
+In this assignment, you will write three programs that simply process input provided on the "standard input" and print results on the "standard output". These programs will not require the use of object-oriented programming and for the most part can be written as a single main method with one or maybe two helper functions if any. The purpose of this assignment is to exercise basic programming constructs that you should already be familiar with like loops, if/then statements, basic data types and arrays.
 
 The assignment is specified in three parts that are in increasing level of difficulty called A1Novice, A1Adept, and A1Jedi. In all three parts, the starter code provides a class with a main method that creates an input Scanner object set up to read input from the standard input (i.e., console).
 
-You are responsible, in each case, for adding code to read input from the console in a specific format, use those inputs to calculate and produce output to the console using System.out (see http://docs.oracle.com/javase/11/docs/api/java/io/PrintStream.html for its documentation).
+You are responsible, in each case, for adding code to read input from the console in a specific format, and to use those inputs to calculate and produce output to the console using ```System.out```.
 
 You mustmatch the format of the example outputs provided and should not produce any additional output of any kind. In particular, you should not print any input prompts or debugging statements.
 
