@@ -152,7 +152,7 @@ In order to convert a double (let's call it "value") to a String with two decima
 String.format("%.2f, value)
 ```
 
-Also, you can not assume that the same item may not show up more than once for the same customer. For example, the following is valid input for A1Adept or A1Jedi that will produce the same results as above.
+You can not assume that the same item may not show up more than once for the same customer. For example, the following is valid input for A1Adept or A1Jedi that will produce the same results as above.
 
 ```
 6
@@ -167,3 +167,12 @@ Carrie Brownstein 5 1 Banana 1 Orange 1 Milk 1 Banana 1 Milk
 Corin Tucker 3 1 Banana 2 Sponge 2 Banana
 Janet Weiss 3 2 Salami 2 Salami 1 Salami
 ```
+
+You should also be sure to only use next, nextInt, and nextDouble as methods of the Scanner object in order to read the next expected input word as either a String, int, or double without trying to process the input as lines. You should not assume any sort of line structure to the input. In other words, the following is a valid equivalent to the example input provided above:
+
+```
+6 Apple 0.25 Banana 0.75 Milk 3.15 Orange 1.25 Salami 2.50 Sponge 1.15 3 Carrie 
+Brownstein 5 1 Banana 1 Orange 1 Milk 1 Banana 1 Milk Corin Tucker 3 1 Banana 2 
+Sponge 2 Banana Janet Weiss 3 2 Salami 2 Salami 1 Salami
+```
+
