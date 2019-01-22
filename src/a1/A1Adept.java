@@ -53,13 +53,19 @@ public class A1Adept {
 				biggest = first + " " + last;
 				bigAmount = newTotal;
 				totals[i] = newTotal; 
-			} else if (smallAmount == 0) {
-				smallAmount = newTotal;
-				smallest = first + " " + last;
-				totals[i]= newTotal; 
 			} else if (newTotal < smallAmount) {
 				smallAmount = newTotal;
 				smallest = first + " " + last;
+				totals[i] = newTotal;
+			}
+			if (smallAmount == 0) {
+				smallAmount = newTotal;
+				smallest = first + " " + last;
+				totals[i]= newTotal; 
+			}
+			if (bigAmount == 0) {
+				bigAmount = newTotal;
+				biggest = first + " " + last;
 				totals[i] = newTotal;
 			}
 		}
