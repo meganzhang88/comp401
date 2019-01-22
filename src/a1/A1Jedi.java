@@ -14,10 +14,6 @@ public class A1Jedi {
 		int[] finalItemNumber = new int[numberOfItems];
 		int[] finalCustomersNumber = new int[numberOfItems];
 		
-		for (int a = 0; a < numberOfItems; a++) {
-			finalItemNumber[a] = 0;
-		}
-		
 		for (int i = 0; i < numberOfItems; i++) {
 			itemsArray[i] = scan.next();
 			pricesArray[i] = scan.nextDouble();
