@@ -32,7 +32,6 @@ public class A1Adept {
 		
 		for (int i = 0; i < customers; i++) {
 		double newTotal = 0;
-		double oldTotal = 0;
 			String first = scan.next();
 			String last = scan.next();
 			int itemsBought = scan.nextInt();
@@ -48,16 +47,6 @@ public class A1Adept {
 				}
 			}
 
-			
-			if (newTotal > bigAmount) {
-				biggest = first + " " + last;
-				bigAmount = newTotal;
-				totals[i] = newTotal; 
-			} else if (newTotal < smallAmount) {
-				smallAmount = newTotal;
-				smallest = first + " " + last;
-				totals[i] = newTotal;
-			}
 			if (smallAmount == 0) {
 				smallAmount = newTotal;
 				smallest = first + " " + last;
@@ -68,6 +57,17 @@ public class A1Adept {
 				biggest = first + " " + last;
 				totals[i] = newTotal;
 			}
+			if (newTotal > bigAmount) {
+				biggest = first + " " + last;
+				bigAmount = newTotal;
+				totals[i] = newTotal; 
+			} else if (newTotal < smallAmount) {
+				smallAmount = newTotal;
+				smallest = first + " " + last;
+				totals[i] = newTotal;
+			} else {
+				totals[i] = newTotal;
+			}
 		}
 		
 		double sum = 0;
@@ -75,7 +75,7 @@ public class A1Adept {
 			sum = sum + totals[l];
 		}
 		
-		double average = sum / totals.length;
+		double average = sum / customers;
 		
 		System.out.println("Biggest: " + biggest + " (" + String.format("%.2f", bigAmount) + ")");
 		System.out.println("Smallest: " + smallest + " (" + String.format("%.2f", smallAmount) + ")");
@@ -84,3 +84,4 @@ public class A1Adept {
 	
 	// You can define / use static helper methods here.
 }
+
