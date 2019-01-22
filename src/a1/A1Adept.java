@@ -71,8 +71,8 @@ public class A1Adept {
 		
 		double average = sum / totals.length;
 		
-		System.out.println("Biggest: " + biggest + "(" + String.format("%.2f", bigAmount) + ")");
-		System.out.println("Smallest: " + smallest + "(" + String.format("%.2f", smallAmount) + ")");
+		System.out.println("Biggest: " + biggest + " (" + String.format("%.2f", bigAmount) + ")");
+		System.out.println("Smallest: " + smallest + " (" + String.format("%.2f", smallAmount) + ")");
 		System.out.println("Average: " + String.format("%.2f", average));
 	}
 	
