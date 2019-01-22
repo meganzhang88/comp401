@@ -23,7 +23,7 @@ public class A1Novice {
 				total = total + quantity * price;
 			}
 			
-		System.out.println(first + "." + last + ": " + total);
+		System.out.println(first + ". " + last + ": " + total);
 		
 		}
 	}
