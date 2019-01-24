@@ -25,6 +25,7 @@ public class A1Jedi {
 			String firstName = scan.next();
 			String lastName = scan.next();
 			int numberOfItemsBought = scan.nextInt();
+			boolean[] exists = new boolean[numberOfItems];
 			
 			String[] customerProductsArray = new String[numberOfItemsBought];
 			
@@ -36,14 +37,13 @@ public class A1Jedi {
 					if (itemBought.equals(itemsArray[l])) {
 						finalItemNumber[l] += quantityOfItem;
 						customerProductsArray[k] = itemBought;
+						exists[l] = true;
 					}
 				}
 			}
-			for (int n = 0; n < customerProductsArray.length; n++) {
-				for (int o = 0; o < itemsArray.length; o++) {
-					if (customerProductsArray[n].equals(itemsArray[o]) && finalCustomersNumber[o] <= j) {
-						finalCustomersNumber[o] +=1;
-					}
+			for (int p = 0; p < numberOfItems; p++) {
+				if (exists[p]) {
+					finalCustomersNumber[p] += 1;
 				}
 			}
 		}
@@ -59,3 +59,4 @@ public class A1Jedi {
 	
 	// You can define / use static helper methods here.
 }
+
